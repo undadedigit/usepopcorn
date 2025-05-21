@@ -2,7 +2,7 @@
 
 ## Overview
 
-UsePopcorn is a Film Lookup and Watched List Service built with React. It allows users to search for films, view detailed information, and maintain a personal list of watched films.
+UsePopcorn is a Film List Service built with React and Next.js. It allows users to search for films, view detailed information, and maintain a personal list of watched films.
 
 ## Features
 
