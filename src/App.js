@@ -337,13 +337,14 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
     [selectedId]
   );
 
-  useEffect(
-    function () {
-      if (!title) return;
-      document.title = `Movie | ${title}`;
-    },
-    [title]
-  );
+  useEffect(function () {
+    if (!title) return;
+    document.title = `Movie | ${title}`;
+
+    return function cleanup() {
+      document.title = "usePopcorn";
+    };
+  });
 
   return (
     <div className="details">
